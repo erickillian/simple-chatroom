@@ -7,14 +7,15 @@ To run a chatroom server run the following commands
 make
 ./server
 ```
-This will by default run the server on port 1234
+This will by default run the server on port 8080
 
 To run the server on a specified port run 
 ```
 make
-./server {port}
+./server {host} {port}
 ```
-where {port} is the designated port that the server will run on
+{host} is the ip address the server will run on
+{port} is the port that the server will run on
 
 ## Client
 

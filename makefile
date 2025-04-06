@@ -1,4 +1,4 @@
-all: server.c
-	gcc -o server server.c -Wall -lpthread
+all: src/server.c
+	gcc -o server src/server.c -Wall -lpthread
 clean:
 	rm server
