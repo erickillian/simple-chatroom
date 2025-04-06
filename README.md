@@ -2,7 +2,7 @@
 
 ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
 
-A simple chatroom application written in C that allows multiple users to communicate in real-time using a telnet client.
+A simple chatroom application written in C that allows multiple users to communicate in real-time using a telnet client. This application is designed to run on Linux systems.
 
 ---
 
