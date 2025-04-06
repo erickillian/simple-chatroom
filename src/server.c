@@ -6,7 +6,6 @@ pthread_mutex_t num_clients_mutex = PTHREAD_MUTEX_INITIALIZER;
 volatile sig_atomic_t stop_server = 0;
 connection_t connection_infos[MAX_CLIENTS];
 
-
 void sigint_handler(int signum) {
     printf("\nShutting down server...\n");
     stop_server = 1;
@@ -60,8 +59,6 @@ void *handle_client(void *arg) {
             }
             continue;
         }
-
-
 
         char *command = strtok(buffer, " \r\n");
 
