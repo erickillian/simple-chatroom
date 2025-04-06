@@ -1,38 +1,79 @@
 # Simple Chatroom programmed in C
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-MIT-blue)
+
+A simple chatroom application written in C that allows multiple users to communicate in real-time using a telnet client.
+
+---
+
+## Table of Contents
+
+- [Server](#server)
+    - [How to Run the Server](#running-the-server)
+    - [Using a Custom Port and Host](#custom-port-and-host)
+- [Client](#client)
+    - [How to Connect to the Server](#connecting-to-the-server)
+- [Available Commands](#commands)
+
+---
+
 ## Server
 
-To run a chatroom server run the following commands
-```
+### Running the Server
+
+To run the chatroom server, execute the following commands:
+
+```bash
 make
 ./server
 ```
-This will by default run the server on port 8080
 
-To run the server on a specified port run 
-```
+By default, the server will run on port `8080`.
+
+### Custom Port and Host
+
+To run the server on a specified host and port, use:
+
+```bash
 make
 ./server {host} {port}
 ```
-{host} is the ip address the server will run on
-{port} is the port that the server will run on
+
+- `{host}`: The IP address the server will bind to.
+- `{port}`: The port number the server will listen on.
+
+---
 
 ## Client
 
-This program is designed to use a telnet client
+This program is designed to use a telnet client.
 
-To connect to the server run 
-```
+### Connecting to the Server
+
+To connect to the server, run:
+
+```bash
 telnet {ip} {port}
 ```
-where {ip}, {port} is the designated ip address, port of the server
+
+- `{ip}`: The IP address of the server.
+- `{port}`: The port number of the server.
+
+---
 
 ## Commands
 
-Once connected through a telnet client run the command
-```
-JOIN {ROOM} {USERNAME}
-```
-This will allow you to join a room with name {ROOM} with a username of {USERNAME}
+Once connected through a telnet client, use the following command to join a chatroom:
 
-You can then freely communicate in the chat room with other users in the room
+```bash
+join {roomname} {username}
+```
+
+- `{roomname}`: The name of the chatroom you want to join.
+- `{username}`: Your desired username.
+
+After joining, you can freely communicate with other users in the same chatroom.
+
+---
+
+Enjoy chatting!
