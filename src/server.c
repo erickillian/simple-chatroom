@@ -70,7 +70,7 @@ void *handle_client(void *arg) {
             const char help_message[] =
                 "Available commands:\n"
                 "\thelp - Show this message\n"
-                "\tjoin room_name user_name - Join a room with a username\n"
+                "\tjoin {roomname} {username} - Join a room with a username\n"
                 "\tquit - Disconnect from the server\n"
                 "\texit - Disconnect from the server\n";
             send(conn_info->socket, help_message, strlen(help_message), 0);
